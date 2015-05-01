@@ -1,0 +1,3 @@
+# jagoda
+
+CKEditor File Browser
