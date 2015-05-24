@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2014, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or http://ckeditor.com/license
+-->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Replace Textareas by Class Name &mdash; CKEditor Sample</title>
+	<script src="../ckeditor.js"></script>
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script>
+            
+         
+            CKEDITOR.on('instanceCreated', function(cke) {
+                cke.editor.on('setData', function(cke) {
+                    if(cke.editor.name == "editor1") 
+                    {                        
+                        cke.data.dataValue = '<div class="mainwindow" style="margin:auto;float:none"><div id="tabContent" style="text-align:left">' + cke.data.dataValue + ' </div></div>'                       
+                    }
+                });               
+            });
+            
+            
+        </script>
+        
+        
+	<link rel="stylesheet" href="sample.css">
+</head>
+<body>
+	
+	<form action="sample_posteddata.php" method="post">
+		<p>
+			<label for="editor1">
+				Editor 1:
+			</label>
+			<textarea class="ckeditor" cols="80" id="editor1" name="editor1" rows="50">
+				 &lt;div&gt; 
+    &lt;div align=&quot;justify&quot;&gt;Fotelik samochodowy &lt;strong&gt;Recaro Young Profi Plus&lt;/strong&gt; przeznaczony jest dla dzieci od &lt;strong&gt;0 do 13 kg&lt;/strong&gt;. Jest to dobrze wyposażony i bardzo bezpieczny fotelik z zastosowaniem innowacyjnych rozwiązań. Unikalna konstrukcja Recaro Young Profi Plus sprawia, że fotelik ten zapewnia nie tylko wysoki komfort, ale także maksymalne bezpieczeństwo. Co zostało potwierdzone, poprzez uzyskanie wysokich not fotelika Recaro Young Profi Plus w crash testach.&amp;nbsp; &lt;br&gt;
+Fotelik montowany jest w samochodzie zawsze tyłem do kierunku jazdy &lt;strong&gt;trzypunktowym samochodowym pasem bezpieczeństwa&lt;/strong&gt; lub za pomocą &lt;strong&gt;Systemu ISOFIX.&lt;/strong&gt; Bazę Isofix można dokupić osobno, ta sama baza pasuje do fotelika Recaro Young Expert Plus przeznaczonego dla
+dzieci od 9 do 15 kg. Fotelik zazwyczaj montuje się na tylnym siedzeniu samochodu.&lt;br&gt; &lt;font size=&quot;3&quot;&gt; &lt;br&gt; &lt;/font&gt; 
+      &lt;div align=&quot;center&quot;&gt; &lt;br&gt; &lt;font size=&quot;3&quot;&gt;ZESTAW RECARO YOUNG PROFI PLUS +BAZA ISOFIX &lt;br&gt;dotyczy każdego koloru fotelika z aktualnej kolekcji&lt;/font&gt; &lt;br&gt;(tylko foteliki, które można wrzucić do koszyka)&lt;br&gt; &lt;/div&gt; 
+    &lt;/div&gt; 
+  &lt;/div&gt; 
+  &lt;div align=&quot;center&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;249&quot; title=&quot;baza&quot; alt=&quot;baza&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/STM/Twin_0_/.resized_250x249_baza.jpg&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;374&quot; title=&quot;baza1&quot; alt=&quot;baza1&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/STM/Twin_0_/.resized_250x374_baza1.jpg&quot;&gt; &lt;br&gt; &lt;/div&gt; 
+  &lt;p&gt; &lt;br&gt;
+W testach bezpieczeństwa fotelik uzyskała wysokie noty zarówno z
+bazą jak i bez bazy.&lt;br&gt; &lt;br&gt; &lt;/p&gt; 
+  &lt;div align=&quot;center&quot; class=&quot;c1&quot;&gt; &lt;img width=&quot;204&quot; height=&quot;124&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/OEAMTC_0607.jpg&quot; alt=&quot;OEAMTC_0607&quot; title=&quot;OEAMTC_0607&quot;&gt; &lt;img width=&quot;142&quot; height=&quot;124&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/RecaroYoungProfiPlus_4c.jpg&quot; alt=&quot;RecaroYoungProfiPlus_4c&quot; title=&quot;RecaroYoungProfiPlus_4c&quot;&gt; &lt;img width=&quot;167&quot; height=&quot;124&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/StiWa_YoungProfiPlus2008.jpg&quot; alt=&quot;StiWa_YoungProfiPlus2008&quot; title=&quot;StiWa_YoungProfiPlus2008&quot;&gt; &lt;br&gt; &lt;/div&gt; 
+  &lt;p&gt; &lt;br&gt; &lt;/p&gt; 
+  &lt;ul&gt; &lt;li&gt;jako jedyny na rynku posiada własne &lt;strong&gt;5-punktowe pasy
+bezpieczeństwa&lt;/strong&gt; spinane w centralny zamek;&lt;/li&gt; 
+    &lt;li&gt;wysokość pasów regulowana jest jednocześnie z
+zagłówkiem;&lt;/li&gt; 
+    &lt;li&gt; &lt;strong&gt;regulowany zagłówek powoduje powiększenie
+głębokości fotelika&lt;/strong&gt;, przez co fotelik może dłużej
+służyć małemu pasażerowi;&lt;br&gt; &lt;br&gt; &lt;div align=&quot;center&quot;&gt; &lt;img width=&quot;400&quot; height=&quot;356&quot; title=&quot;YPP&quot; alt=&quot;YPP&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/YPP.jpg&quot;&gt; &lt;br&gt; &lt;br&gt; &lt;/div&gt; 
+    &lt;/li&gt; 
+    &lt;li&gt;wysokie ścianki boczne maksymalnie chroniące dziecko podczas
+bocznych uderzeń;&lt;/li&gt; 
+    &lt;li&gt;fotelik wyposażony jest we wkładkę redukcyjną, która
+dostosowuje rozmiar fotelika do wielkości noworodka. Wkładka
+posiada &lt;strong&gt;sztywny, wysoki wałeczek ochronny na
+główkę&lt;/strong&gt; oraz &lt;strong&gt;wypełnienie&lt;/strong&gt;,
+które łagodzi kąt siedzenia dziecka w pierwszym okresie życia oraz
+zapewnia prawidłową, bezpieczną i wygodną pozycję w trakcie
+podróżowania;&lt;/li&gt; 
+    &lt;li&gt;praktyczny zdejmowany daszek przeciwsłoneczny;&lt;/li&gt; 
+    &lt;li&gt;tapicerka z mikrofibry lub z imitacji zamszu, łatwa w
+czyszczeniu. Tapicerkę można zdjąć i uprać w pralce w
+temperaturze 30 st.;&lt;/li&gt; 
+    &lt;li&gt;tapicerka z mikrofibry jest niepalna (przy kontakcie z ogniem
+zrobi się w niej dziurka jak w polarze);&lt;/li&gt; 
+    &lt;li&gt;fotelik wyposażony jest w &lt;strong&gt;funkcję kołyski&lt;/strong&gt;,
+można ją zablokować odchylając uchwyt do przenoszenia
+maksymalnie do tyłu;&lt;/li&gt; 
+    &lt;li&gt;ergonomiczny uchwyt do przenoszenia;&lt;/li&gt; 
+    &lt;li&gt;bardzo wysokie wyniki za bezpieczeństwo podczas crash-testów wykonanych przez firmę DEKRA;&lt;br&gt; &lt;br&gt; &lt;div align=&quot;center&quot;&gt; &lt;img width=&quot;450&quot; height=&quot;220&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/dekra.jpg&quot; alt=&quot;dekra&quot; title=&quot;dekra&quot;&gt; &lt;br&gt; &lt;/div&gt; 
+    &lt;/li&gt; 
+  &lt;/ul&gt; &lt;p&gt;Odpowiednikiem fotelika Recaro Young Profi Plus jest &lt;a href=&quot;/recaro,,,stm,twin,0+,%28isofix%29_p348&quot;&gt;Recaro / STM Twin 0+&lt;/a&gt; &lt;a href=&quot;/recaro,,,stm,twin,0+,%28isofix%29_p348&quot;&gt; &lt;/a&gt; &lt;a target=&quot;_blank&quot;&gt; (Isofix)&lt;/a&gt; firmy zależnej od
+Recaro.&lt;br&gt; &lt;/p&gt; &lt;br&gt; &lt;div class=&quot;c5&quot;&gt; &lt;u&gt; &lt;strong&gt;Rodzaje tapicerek RECARO Young Profi Plus 2013:
+    &lt;br&gt; &lt;/strong&gt; &lt;/u&gt; &lt;br&gt;Tapicerka &lt;strong&gt;Bellini Soft&lt;/strong&gt; to zupełnie nowy, wysoce funkcjonalny materiał:&lt;br&gt; &lt;ul&gt; &lt;li&gt;jest oddychająca oraz efektywnie odprowadza ciepło;&lt;/li&gt; 
+      &lt;li&gt;posiada aksamitną powłokę oraz gęsty splot tkaniny, dzięki czemu znacznie ogranicza osadzanie się potencjalnych zabrudzeń;&lt;/li&gt; 
+      &lt;li&gt;jest niebywale delikatna i miękka w dotyku;&lt;/li&gt; 
+      &lt;li&gt;wyróżnia się ekskluzywnym wyglądem;&lt;/li&gt; 
+    &lt;/ul&gt;
+Nasze  nowe tapicerki spełniają wymogi Oeko-Tex&amp;reg;  Standard 100 oraz  
+Stiftung  Warentest. Zostały przetestowane pod kątem trwałości koloru  
+oraz  zawartości substancji szkodliwych. Dodatkowo są one odporne na  
+działanie  potu i śliny a także wysoce trudnopalne ( zgodnie z normą  
+ECE-R 44/04). &lt;u&gt; &lt;strong&gt; &lt;/strong&gt; &lt;/u&gt; 
+    &lt;table cellspacing=&quot;0&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; frame=&quot;void&quot; rules=&quot;none&quot; style=&quot;background-image:none;border-style:none;width:100%;float:none;&quot;&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;328&quot; title=&quot;black&quot; alt=&quot;black&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x328_black.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/.resized_200x200_black.jpg&quot; alt=&quot;black&quot; title=&quot;black&quot;&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; 
+              &lt;p&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Black&lt;/font&gt; &lt;/strong&gt; &lt;/p&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;321&quot; title=&quot;cherry&quot; alt=&quot;cherry&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x321_cherry.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/.resized_200x200_cherry.jpg&quot; alt=&quot;cherry&quot; title=&quot;cherry&quot;&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;font size=&quot;5&quot;&gt; &lt;strong&gt;Cherry&lt;/strong&gt; &lt;/font&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;329&quot; title=&quot;graphite&quot; alt=&quot;graphite&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x329_graphite.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/.resized_200x200_graphite.jpg&quot; alt=&quot;graphite&quot; title=&quot;graphite&quot;&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Graphite&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;335&quot; title=&quot;mocca&quot; alt=&quot;mocca&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x335_mocca.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/mocca.jpg&quot; alt=&quot;mocca&quot; title=&quot;mocca&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Mocca&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;321&quot; title=&quot;pink&quot; alt=&quot;pink&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x321_pink.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/.resized_200x200_pink.jpg&quot; alt=&quot;pink&quot; title=&quot;pink&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Pink&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;333&quot; title=&quot;saphir&quot; alt=&quot;saphir&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x333_saphir.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/saphire.jpg&quot; alt=&quot;saphire&quot; title=&quot;saphire&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;font size=&quot;5&quot;&gt; &lt;strong&gt;Saphir&lt;/strong&gt; &lt;/font&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;332&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x332_shadow.jpg&quot; alt=&quot;shadow&quot; title=&quot;shadow&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/.resized_200x200_shadow.jpg&quot; alt=&quot;shadow&quot; title=&quot;shadow&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;font size=&quot;5&quot;&gt; &lt;strong&gt;Shadow&lt;/strong&gt; &lt;/font&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;331&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2013/.resized_250x331_violet.jpg&quot; alt=&quot;violet&quot; title=&quot;violet&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+          &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/2013/.resized_200x200_violet.jpg&quot; alt=&quot;violet&quot; title=&quot;violet&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+            &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Violet&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+          &lt;/td&gt; 
+        &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;u&gt; &lt;strong&gt; &lt;br&gt; &lt;/strong&gt; &lt;/u&gt; &lt;u&gt; &lt;strong&gt;Rodzaje tapicerek RECARO Young Profi Plus 2012:
+    &lt;/strong&gt; &lt;/u&gt; &lt;br&gt; &lt;br&gt; &lt;/div&gt; 
+  &lt;p&gt; &lt;strong&gt; &lt;/strong&gt; &lt;/p&gt; 
+  &lt;table cellspacing=&quot;0&quot; cellpadding=&quot;1&quot; border=&quot;1&quot; frame=&quot;void&quot; rules=&quot;none&quot; style=&quot;background-image:none;border-style:none;width:100%;float:none;&quot;&gt; &lt;tbody&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;304&quot; title=&quot;cherry&quot; alt=&quot;cherry&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2012/.resized_250x304_cherry.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;198&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/.resized_200x198_punched_czerwono_czarny.jpg&quot; alt=&quot;punched_czerwono_czarny&quot; title=&quot;punched_czerwono_czarny&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+          &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Cherry&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+        &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;352&quot; title=&quot;pink&quot; alt=&quot;pink&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2012/.resized_250x352_pink.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/.resized_200x200_pink.jpg&quot; alt=&quot;pink&quot; title=&quot;pink&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+          &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Pink&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+        &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;335&quot; title=&quot;saphir&quot; alt=&quot;saphir&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2012/.resized_250x335_saphir.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/.resized_200x200_mikrofibra_black_saphir.jpg&quot; alt=&quot;mikrofibra_black_saphir&quot; title=&quot;mikrofibra_black_saphir&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+          &lt;div align=&quot;left&quot;&gt; &lt;font size=&quot;5&quot;&gt; &lt;strong&gt;Saphir&lt;/strong&gt; &lt;/font&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+        &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; rowspan=&quot;1&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;356&quot; title=&quot;orange&quot; alt=&quot;orange&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2012/.resized_250x356_orange.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;td align=&quot;center&quot; rowspan=&quot;1&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;200&quot; height=&quot;200&quot; title=&quot;orange&quot; alt=&quot;orange&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/.resized_200x200_orange.jpg&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; colspan=&quot;2&quot; rowspan=&quot;1&quot; style=&quot;width:50%;&quot;&gt; &lt;br&gt; &lt;div align=&quot;left&quot;&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;Orange&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt;
+        &lt;/td&gt;  
+      &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;250&quot; height=&quot;323&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Young_Profi_Plus/2012/.resized_250x323_grey.jpg&quot; alt=&quot;grey&quot; title=&quot;grey&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;td align=&quot;center&quot; style=&quot;width:50%;&quot;&gt; &lt;img width=&quot;201&quot; height=&quot;200&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/Kolory/.resized_201x200_punched_aphalt_grey.jpg&quot; alt=&quot;punched_aphalt_grey&quot; title=&quot;punched_aphalt_grey&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td align=&quot;center&quot; rowspan=&quot;1&quot; style=&quot;width:50%;&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+        &lt;td align=&quot;center&quot; rowspan=&quot;1&quot; style=&quot;width:50%;&quot;&gt; &lt;br&gt; &lt;/td&gt; 
+      &lt;/tr&gt; &lt;tr&gt; &lt;td colspan=&quot;2&quot; style=&quot;width:50%;&quot;&gt; 
+          &lt;div align=&quot;left&quot;&gt; &lt;font size=&quot;5&quot;&gt; &lt;strong&gt;Grey&lt;/strong&gt; &lt;/font&gt; &lt;br&gt; &lt;hr&gt; &lt;/div&gt; 
+        &lt;/td&gt; 
+      &lt;/tr&gt; &lt;/tbody&gt; &lt;/table&gt; &lt;u&gt; &lt;strong&gt; &lt;/strong&gt; &lt;/u&gt; 
+  &lt;p&gt; &lt;br&gt; &lt;strong&gt; &lt;font size=&quot;5&quot;&gt;WAGA: 4,2 kg&lt;/font&gt; &lt;/strong&gt; &lt;br&gt; &lt;br&gt; &lt;strong&gt;Dodatkowe dostępne akcesoria:&lt;/strong&gt; &lt;br&gt; &lt;br&gt;
+- baza ISOFIX,&lt;br&gt;
+- folia przeciwdeszczowa,&lt;br&gt;
+- moskitiera,&lt;br&gt;
+- śpiworek,&lt;br&gt;
+- tapicerka&lt;/p&gt; 
+  &lt;p align=&quot;center&quot;&gt; &lt;a href=&quot;http://www.recaro-polska.pl/index.php/3rokgwarancji&quot; target=&quot;_blank&quot;&gt; &lt;img width=&quot;560&quot; height=&quot;597&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Recaro/3rok_gwarancji.jpg&quot; alt=&quot;3rok_gwarancji&quot; title=&quot;3rok_gwarancji&quot;&gt; &lt;/a&gt; &lt;br&gt; &lt;/p&gt; 
+  &lt;p align=&quot;center&quot; class=&quot;c6&quot;&gt; &lt;img width=&quot;125&quot; height=&quot;83&quot; src=&quot;/external/xinha/plugins/ExtendedFileManager/demo_images/Promocje/Flagi/.resized_125x83_flniem.jpg&quot; alt=&quot;flniem&quot; title=&quot;flniem&quot;&gt; &lt;br&gt; &lt;strong&gt;Kraj pochodzenia: Niemcy&lt;/strong&gt; &lt;/p&gt;            &lt;br&gt;
+                        &lt;br style=&quot;clear:both;&quot;&gt;
+            &lt;p class=&quot;print&quot;&gt;
+                &lt;a target=&quot;_blank&quot; href=&quot;/app/productprint/p/200/print.html&quot;&gt;&lt;img title=&quot;Drukuj&quot; alt=&quot;Drukuj&quot; src=&quot;/layout/images/drukuj.gif&quot;&gt;&lt;/a&gt;
+            &lt;/p&gt;</textarea>
+		</p>
+		<p>
+			<input type="submit" value="Submit">
+		</p>
+	</form>
+	<div id="footer">
+		<hr>
+		<p>
+			CKEditor - The text editor for the Internet - <a class="samples" href="http://ckeditor.com/">http://ckeditor.com</a>
+		</p>
+		<p id="copy">
+			Copyright &copy; 2003-2014, <a class="samples" href="http://cksource.com/">CKSource</a> - Frederico
+			Knabben. All rights reserved.
+		</p>
+	</div>
+</body>
+</html>
